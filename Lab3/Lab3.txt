@@ -1,0 +1,222 @@
+##Student
+
+
+public class Student {
+	
+	int id;
+	String name;
+	String course;
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getCourse() {
+		return course;
+	}
+	public void setCourse(String course) {
+		this.course = course;
+	}
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", course=" + course + "]";
+	}
+
+	
+
+}
+
+##StudentTest
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+
+		Student s1=new Student();
+                s1.setId(100);
+                s1.setName("Afrin");
+		System.out.println(s1);
+
+		Student s2=new Student();
+                s2.setId(200);
+                s2.setName("Mrinmoye");
+                System.out.println(s2);
+		
+		
+	}
+
+}
+
+##product
+
+
+public class Product {
+	String code;
+	String description;
+	double price;
+	
+	
+	
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "Product [code=" + code + ", description=" + description + ", price=" + price + "]";
+	}
+	public Product(String code, String description, double price) {
+		super();
+		this.code = code;
+		this.description = description;
+		this.price = price;
+	}
+	
+	
+
+}
+
+##productTest
+
+
+public class ProductTest {
+
+	public static void main(String[] args) {
+		//Product p1=new Product();
+		
+		//p1.setCode("1000");
+		//p1.setDescription("this is iphn x");
+		//p1.setPrice(700000);
+		//System.out.println(p1);
+		
+		Product p1=new Product("1000t","this is samsung ",500000);
+		System.out.println(p1);
+		
+		//p2.setCode("1000t");
+		
+		
+	}
+
+}
+
+##Rectangle
+
+
+public class Rectangle {
+	 private double height;
+	private double width;
+	public double getHeight() {
+		return height;
+	}
+	public void setHeight(double height) {
+		this.height = height;
+	}
+	public double getWidth() {
+		return width;
+	}
+	public void setWidth(double width) {
+		this.width = width;
+	}
+	@Override
+	public String toString() {
+		return "Rectangle [height=" + height + ", width=" + width + "]";
+	}
+	public double calculateArea() {
+		return height*width;
+	}
+	
+	public Rectangle(double height, double width) {
+		super();
+		this.height = height;
+		this.width = width;
+		
+	}
+	}
+	
+
+##RectangleTest
+
+
+public class RectangleTest {
+
+	public static void main(String[] args) {
+	Rectangle r1= new Rectangle(3,5);
+	System.out.println(r1);
+	System.out.println(r1.calculateArea());
+	
+			
+	}
+
+}
+
+
+##calculator
+
+
+public class Calculator {
+	double num1;
+	double num2;
+	public Calculator(double num1, double num2) {
+		super();
+		this.num1 = num1;
+		this.num2 = num2;
+	}
+	public double calculateAdd() {
+		return num1+num2;
+	}
+	public double calculateSub() {
+		return num1-num2;
+	}
+	public double calculateMul() {
+		return num1*num2;
+	}
+	public double calculateDiv() {
+		return num1/num2;
+	}
+	
+
+}
+
+
+##calculatortest
+
+
+public class CalculatorTest {
+
+	public static void main(String[] args) {
+		Calculator c1= new Calculator(5,3);
+		System.out.println(c1.calculateAdd());
+		System.out.println(c1.calculateSub());
+		System.out.println(c1.calculateMul());
+		System.out.println(c1.calculateDiv());
+		
+	}
+
+}
+
+
+
+
